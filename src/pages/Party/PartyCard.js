@@ -20,12 +20,12 @@ const PartyCard = ({ title, name, location, trigger }) => {
                spacing={1}
                sx={{ mb: 1 }}
         >
-          <Typography variant="h5" gutterBottom component="div">
+          <Typography variant="h6" gutterBottom component="div">
             {title}
           </Typography>
           <Button variant={isJoined ? "contained" : "outlined"}
                   onClick={toggleJoin}
-          >{isJoined ? 'Joined' : 'Join'}</Button>
+          >{isJoined ? 'Waiting' : 'Join'}</Button>
         </Stack>
         <Stack alignItems="center" direction="row">
           <Avatar alt="Remy Sharp"

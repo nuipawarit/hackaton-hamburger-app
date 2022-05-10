@@ -24,7 +24,7 @@ const ParticipantsDialog = ({ open, onClose, event = {} }) => {
                  justifyContent="space-between"
                  alignItems="flex-start"
                  spacing={1}>
-            <Typography variant="h4"
+            <Typography variant="h5"
                         sx={{ mt: 1, mb: 4 }}>search {event.title} participants</Typography>
             <IconButton onClick={onClose} color="default">
               <CloseIcon/>

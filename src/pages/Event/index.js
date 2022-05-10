@@ -35,10 +35,10 @@ const Event = () => {
 
   return (
     <Box m={2} mt={5}>
-      <Typography variant="h4" sx={{ mb: 4 }}>
+      <Typography variant="h4" sx={{ mb: 4, color: 'white' }} >
         Upcoming events
       </Typography>
-      <TextField fullWidth label="Search" type="search" size='small' sx={{ mb: 2 }}/>
+      <TextField fullWidth variant="filled" label="Search" type="search" size='small' sx={{ mb: 2 }}/>
       <Stack spacing={2}>
         {MOCK_EVENTS.map(event =>
           <Card key={event.title} variant="outlined">
@@ -48,13 +48,14 @@ const Event = () => {
                      alignItems="baseline"
                      spacing={1}
                      sx={{ mb: 1 }}>
-                <Typography variant="h5" component="div">{event.title}</Typography>
+                <Typography variant="h6" component="div">{event.title}</Typography>
                 <Button onClick={() => onJoin(event)} variant="outlined">Join</Button>
               </Stack>
               <Stack alignItems="center" direction="row">
                 <AvatarGroup max={4}
                              onClick={() => onParticipantListClick(event)}
-                             style={{ cursor: 'pointer' }}>
+                             style={{ cursor: 'pointer' }}
+                             sx={{ mr: 'auto' }}>
                   {event.members.map(name =>
                     <Avatar alt={name}
                             src={`https://fakeface.rest/face/view?minimum_age=25&maximum_age=30&t=${Math.random()}`}/>
