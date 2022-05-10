@@ -36,97 +36,79 @@ const Chat = () => {
             <MessageList>
 
               <Message model={{
-                message: "Hello my friend",
+                message: "Hello New friends!",
                 sentTime: "15 mins ago",
                 sender: "Emily",
                 direction: "incoming",
                 position: "single"
               }}>
-                <Avatar src="https://fakeface.rest/face/view" name={"Frank"} />
+                <Avatar src={`https://fakeface.rest/face/view?minimum_age=25&maximum_age=30&t=${Math.random()}`} name={"Frank"} />
               </Message>
               <Message model={{
-                message: "Hello my friend",
+                message: "Hi there!",
                 sentTime: "15 mins ago",
                 sender: "Me",
                 direction: "outgoing",
                 position: "single"
               }} />
               <Message model={{
-                message: "Hello my friend",
+                message: "Hi everyone!",
                 sentTime: "15 mins ago",
                 sender: "Emily",
                 direction: "incoming",
                 position: "first"
               }} avatarSpacer />
               <Message model={{
-                message: "Hello my friend",
+                message: "Nice to meet you all",
                 sentTime: "15 mins ago",
                 sender: "Emily",
                 direction: "incoming",
                 position: "normal"
               }} avatarSpacer />
-              <Message model={{
-                message: "Hello my friend",
+              {/* <Message model={{
+                message: "",
                 sentTime: "15 mins ago",
                 sender: "Emily",
                 direction: "incoming",
                 position: "normal"
-              }} avatarSpacer />
+              }} avatarSpacer /> */}
               <Message model={{
-                message: "Hello my friend",
+                message: "Thanks for creating this group!",
                 sentTime: "15 mins ago",
                 sender: "Emily",
                 direction: "incoming",
                 position: "last"
               }}>
-                <Avatar src="https://fakeface.rest/face/view" name={"Sam"} />
+                <Avatar src={`https://fakeface.rest/face/view?minimum_age=25&maximum_age=30&t=${Math.random()}`} name={"Sam"} />
               </Message>
               <Message model={{
-                message: "Hello my friend",
+                message: "You're welcome!",
                 sentTime: "15 mins ago",
                 direction: "outgoing",
                 position: "first"
-              }} />
-              <Message model={{
-                message: "Hello my friend",
-                sentTime: "15 mins ago",
-                direction: "outgoing",
-                position: "normal"
-              }} />
-              <Message model={{
-                message: "Hello my friend",
-                sentTime: "15 mins ago",
-                direction: "outgoing",
-                position: "normal"
-              }} />
-              <Message model={{
-                message: "Hello my friend",
-                sentTime: "15 mins ago",
-                direction: "outgoing",
-                position: "last"
               }} />
 
               <Message model={{
-                message: "Hello my friend",
+                message: "Hey!",
                 sentTime: "15 mins ago",
                 sender: "Emily",
                 direction: "incoming",
                 position: "first"
               }} avatarSpacer />
               <Message model={{
-                message: "Hello my friend",
+                message: "When should we meet?",
                 sentTime: "15 mins ago",
                 sender: "Emily",
                 direction: "incoming",
                 position: "last"
               }}>
-                <Avatar src="https://fakeface.rest/face/view" name={"Smith"} />
+                <Avatar src={`https://fakeface.rest/face/view?minimum_age=25&maximum_age=30&t=${Math.random()}`} name={"Smith"} />
               </Message>
 
               <MessageSeparator content="Wednesday, 11 May 2022" />
 
               <Message model={{
-                message: "Hello my friend",
+                message: "Should we go eat something first?",
                 sentTime: "15 mins ago",
                 sender: "Emily",
                 direction: "incoming",
@@ -135,76 +117,54 @@ const Chat = () => {
                 <Avatar src="https://picsum.photos/id/1011/200" name={"Bill"} />
               </Message>
               <Message model={{
-                message: "Hello my friend",
+                message: "Let's ask everyone",
                 sentTime: "15 mins ago",
                 sender: "Me",
                 direction: "outgoing",
-                position: "single"
+                position: "last"
               }} />
               <Message model={{
-                message: "Hello my friend",
+                message: "Should we go drink something before we go in?",
                 sentTime: "15 mins ago",
                 sender: "Emily",
-                direction: "incoming",
-                position: "first"
-              }} avatarSpacer />
-              <Message model={{
-                message: "Hello my friend",
-                sentTime: "15 mins ago",
-                sender: "Emily",
-                direction: "incoming",
+                direction: "outgoing",
                 position: "normal"
-              }} avatarSpacer />
-              <Message model={{
-                message: "Hello my friend",
-                sentTime: "15 mins ago",
-                sender: "Emily",
-                direction: "incoming",
-                position: "normal"
-              }} avatarSpacer />
-              <Message model={{
-                message: "Hello my friend",
-                sentTime: "15 mins ago",
-                sender: "Emily",
-                direction: "incoming",
-                position: "last"
               }}>
-                <Avatar src="https://fakeface.rest/face/view" name={"James"} />
+                
               </Message>
               <Message model={{
-                message: "Hello my friend",
+                message: "Sorry",
                 sentTime: "15 mins ago",
                 direction: "outgoing",
                 position: "first"
               }} />
               <Message model={{
-                message: "Hello my friend",
+                message: "I mean feast",
                 sentTime: "15 mins ago",
                 direction: "outgoing",
                 position: "normal"
               }} />
               <Message model={{
-                message: "Hello my friend",
+                message: "Need",
                 sentTime: "15 mins ago",
                 direction: "outgoing",
                 position: "normal"
               }} />
               <Message model={{
-                message: "Hello my friend",
+                message: "Eat",
                 sentTime: "15 mins ago",
                 direction: "outgoing",
-                position: "last"
+                position: "normal"
               }} />
-
               <Message model={{
-                message: "Hello my friend",
+                message: "Sorry for my autocorrect",
                 sentTime: "15 mins ago",
-                sender: "Emily",
-                direction: "incoming",
-                position: "first"
-              }} avatarSpacer />
+                direction: "outgoing",
+                position: "normal"
+              }} />
+             
               <Message model={{
-                message: "Hello my friend",
+                message: "Are you stil using that?",
                 sentTime: "15 mins ago",
                 sender: "Emily",
                 direction: "incoming",
