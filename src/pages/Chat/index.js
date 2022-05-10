@@ -42,7 +42,7 @@ const Chat = () => {
                 direction: "incoming",
                 position: "single"
               }}>
-                <Avatar src="https://picsum.photos/id/203/200" name={"Frank"} />
+                <Avatar src="https://fakeface.rest/face/view" name={"Frank"} />
               </Message>
               <Message model={{
                 message: "Hello my friend",
@@ -79,7 +79,7 @@ const Chat = () => {
                 direction: "incoming",
                 position: "last"
               }}>
-                <Avatar src="https://picsum.photos/id/129/200" name={"Sam"} />
+                <Avatar src="https://fakeface.rest/face/view" name={"Sam"} />
               </Message>
               <Message model={{
                 message: "Hello my friend",
@@ -120,7 +120,7 @@ const Chat = () => {
                 direction: "incoming",
                 position: "last"
               }}>
-                <Avatar src="https://picsum.photos/id/1027/200" name={"Smith"} />
+                <Avatar src="https://fakeface.rest/face/view" name={"Smith"} />
               </Message>
 
               <MessageSeparator content="Wednesday, 11 May 2022" />
@@ -169,7 +169,7 @@ const Chat = () => {
                 direction: "incoming",
                 position: "last"
               }}>
-                <Avatar src="https://picsum.photos/id/1013/200" name={"James"} />
+                <Avatar src="https://fakeface.rest/face/view" name={"James"} />
               </Message>
               <Message model={{
                 message: "Hello my friend",
