@@ -12,7 +12,7 @@ function App() {
   return (
     <DeviceFrameset device="iPhone X">
       <Box height="100%" style={{ overflowY: 'scroll' }}>
-        <BrowserRouter>
+        <BrowserRouter forceRefresh>
           <Switch>
             <Route path="/event">
               <Event/>
