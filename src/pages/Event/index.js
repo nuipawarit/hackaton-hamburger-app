@@ -12,12 +12,14 @@ import {
 } from '@mui/material';
 import { MOCK_EVENTS } from './const';
 import ParticipantsDialog from './ParticipantsDialog';
+import { useHistory } from 'react-router-dom';
 
 const Event = () => {
+  const history = useHistory();
   const [open, setOpen] = React.useState(false);
   const [selected, setSelected] = React.useState(null);
 
-  const onJoin = (event) => {
+  const onParticipantListClick = (event) => {
     setSelected(event);
     setOpen(true);
   };
@@ -25,6 +27,10 @@ const Event = () => {
   const onClose = () => {
     setOpen(false);
     setSelected(null);
+  };
+
+  const onJoin = () => {
+    history.push(`/party`);
   };
 
   return (
@@ -48,7 +54,9 @@ const Event = () => {
               <Stack direction="row"
                      justifyContent="space-between"
                      alignItems="baseline" spacing={1}>
-                <AvatarGroup max={4}>
+                <AvatarGroup max={4}
+                             onClick={() => onParticipantListClick(event)}
+                             style={{ cursor: 'pointer' }}>
                   {event.members.map(name =>
                     <Avatar alt={name}
                             src={`https://fakeface.rest/face/view?minimum_age=25&maximum_age=30&t=${Math.random()}`}/>
