@@ -5,7 +5,7 @@ import PartyCard from './PartyCard'
 const Party = () => {
   const [isJoining, setJoining] = React.useState(false)
   
-  const handleClick = () => () => {
+  const handleClick = () => {
     setJoining(true);
   };
   
@@ -15,17 +15,17 @@ const Party = () => {
 
   return (
     <Box m={2} mt={5}>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" sx={{ mb: 3 }}>
         Odette dinner
       </Typography>
-      <Typography variant="body1" gutterBottom>
+      <Typography variant="body1" sx={{ mb: 2 }}>
       3 Michellin restaurants Modern French cuisine served amid sophisticated decor in the National Gallery Singapore.
       </Typography>
-      <TextField fullWidth id="outlined-search" label="Search field" type="search" size='small' sx={{ mx: 'auto', width: '70%' }} />
+      <TextField fullWidth label="Search" type="search" size='small'  sx={{ mb: 2 }}/>
       <Stack spacing={2}>
-        <PartyCard title="All on me, I'm rich" name='Markzaa' location='Singapore' trigger={handleClick()}/>
-        <PartyCard title="Not on me , I'm broke" name='Patjung' location='Singapore' trigger={handleClick()}/>
-        <PartyCard title="Daddy's here" name='lnWfirst' location='Singapore' trigger={handleClick()}/>
+        <PartyCard title="All on me, I'm rich" name='Markzaa' location='Singapore' trigger={handleClick}/>
+        <PartyCard title="Not on me , I'm broke" name='Patjung' location='Singapore' trigger={handleClick}/>
+        <PartyCard title="Daddy's here" name='lnWfirst' location='Singapore' trigger={handleClick}/>
       </Stack>
       <Snackbar
         anchorOrigin={{ vertical:'top', horizontal:'center' }}

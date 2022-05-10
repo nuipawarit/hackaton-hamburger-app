@@ -38,7 +38,7 @@ const Event = () => {
       <Typography variant="h4" sx={{ mb: 4 }}>
         Upcoming events
       </Typography>
-      <TextField fullWidth label="Search" type="search" sx={{ mb: 2 }}/>
+      <TextField fullWidth label="Search" type="search" size='small' sx={{ mb: 2 }}/>
       <Stack spacing={2}>
         {MOCK_EVENTS.map(event =>
           <Card key={event.title} variant="outlined">
@@ -51,9 +51,7 @@ const Event = () => {
                 <Typography variant="h5" component="div">{event.title}</Typography>
                 <Button onClick={() => onJoin(event)} variant="outlined">Join</Button>
               </Stack>
-              <Stack direction="row"
-                     justifyContent="space-between"
-                     alignItems="baseline" spacing={1}>
+              <Stack alignItems="center" direction="row">
                 <AvatarGroup max={4}
                              onClick={() => onParticipantListClick(event)}
                              style={{ cursor: 'pointer' }}>

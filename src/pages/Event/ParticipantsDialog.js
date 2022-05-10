@@ -32,7 +32,7 @@ const ParticipantsDialog = ({ open, onClose, event = {} }) => {
           </Stack>
           <Stack spacing={4}>
             {event.members.map(name =>
-              <Stack key={name} alignItems="enter" direction="row">
+              <Stack key={name} alignItems="center" direction="row">
                 <Avatar alt={name}
                         src={`https://fakeface.rest/face/view?minimum_age=25&maximum_age=30&t=${Math.random()}`}
                         sx={{ mr: 2 }}/>
