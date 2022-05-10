@@ -33,7 +33,7 @@ const Party = () => {
         onClose={handleClose}
         message="Your request is sent Please wait for the host to approve"
         key={'topcenter'}
-        sx={{ mt: 91, width: '81%', mx: 'auto' }}
+        sx={{ mt: 91, width: '50%', mx: 'auto' }}
       />
     </Box>
   );
