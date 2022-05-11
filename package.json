@@ -2,6 +2,7 @@
   "name": "hackaton-hamburger-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/hamburger.co",
   "dependencies": {
     "@chatscope/chat-ui-kit-react": "^1.8.3",
     "@chatscope/chat-ui-kit-styles": "^1.2.3",

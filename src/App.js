@@ -33,7 +33,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <DeviceFrameset device="iPhone X">
         <Box height="100%" style={{ overflowY: 'scroll', background: '#d87490' }} >
-          <BrowserRouter forceRefresh>
+          <BrowserRouter basename={'/hamburger.co'}>
             <Switch>
               <Route path="/event">
                 <Event/>
